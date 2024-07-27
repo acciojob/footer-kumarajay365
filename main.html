@@ -1,35 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer Design</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
 
-  <body>
-    <footer>
-      <div class="content">
-        <div class="top">
-          <div class="logo-details">
-            <span class="logo_name">company</span>
-          </div>
-          <div class="media-icons">
-            <!-- your code here -->
-          </div>
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-section h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.media-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+    </style>
+</head>
+<body>
+    <footer class="footer">
+        <div class="footer-container">
+            <!-- Home Section -->
+            <div class="footer-section home">
+                <h2>Home</h2>
+                <a href="/">Homepage</a>
+            </div>
+
+            <!-- About Section -->
+            <div class="footer-section about">
+                <h2>About</h2>
+                <a href="/about">About Us</a>
+            </div>
+
+            <!-- Links Section -->
+            <div class="footer-section links">
+                <h2>Links</h2>
+                <a href="/">Homepage</a>
+                <a href="/about">About Us</a>
+                <a href="/services">Services</a>
+                <a href="/blog">Blog</a>
+                <a href="/contact">Contact</a>
+            </div>
+
+            <!-- Services Section -->
+            <div class="footer-section services">
+                <h2>Services</h2>
+                <a href="/services/service1">Service 1</a>
+                <a href="/services/service2">Service 2</a>
+                <a href="/services/service3">Service 3</a>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-section contact">
+                <h2>Contact</h2>
+                <p>Contact Number: 8879887262</p>
+                <a href="/contact">Contact Us</a>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/YourCompany" class="media-icon"><img src="hhttps://w7.pngwing.com/pngs/561/460/png-transparent-fb-facebook-facebook-logo-social-media-icon.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/YourCompany" class="media-icon"><img src="https://image.shutterstock.com/image-vector/twitter-icon-260nw-1057939782.jpg" alt="Twitter"></a>
+                    <a href="https://www.linkedin.com/company/YourCompany" class="media-icon"><img src="https://image.shutterstock.com/image-vector/linkedin-icon-260nw-1541745828.jpg" alt="LinkedIn"></a>
+                    <a href="https://www.instagram.com/YourCompany" class="media-icon"><img src="https://image.shutterstock.com/image-vector/instagram-icon-260nw-1515371336.jpg" alt="Instagram"></a>
+                    <a href="https://www.youtube.com/YourCompany" class="media-icon"><img src="https://image.shutterstock.com/image-vector/youtube-icon-260nw-1500699028.jpg" alt="YouTube"></a>
+                </div>
+            </div>
         </div>
-        <div class="link-boxes">
-          <!-- your code here -->
-        </div>
-      </div>
-      <div class="bottom-details">
-        <!-- your code here -->
-      </div>
     </footer>
-  </body>
+</body>
 </html>
